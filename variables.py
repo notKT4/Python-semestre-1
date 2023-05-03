@@ -12,7 +12,7 @@ print(edad)
 print("Hola mi nombre es",nombre,"y tengo",edad)
 
 #04-
-print("Hola,mi nombre es"+" "+nombre+" "+"y tengo" +str(edad))
+print("Hola,mi nombre es"+" "+nombre+" "+"y tengo"+" "+str(edad))
 print(f"Hola mi nombre es {nombre} y tengo {edad} años")
 
 #05-ACTUALIZANDO UNA VARIABLE (Mutable)
