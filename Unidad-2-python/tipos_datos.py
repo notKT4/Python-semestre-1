@@ -73,3 +73,57 @@ print("Nuevo valor de Arreglo de un elemento:",lenguaje)
 print(estudiantes[0]) #CORRECTO (1ER ELEMENTO DE LA LISTA)
 print(estudiantes[1]) #2DO ELEMENTO DE LA LISTA
 print("Posicion -2",estudiantes[-2])
+
+#SE PUEDEN SUMAR LISTAS?
+print("Suma de listas",estudiantes+num)
+
+#QUE HACEN ESTAS FUNCIONES?
+print(list("Python"))
+print(list(range(10)))
+print("\n")
+
+# - TUPLAS (NO MUTABLES)
+newtupla = tuple()
+grupo1 = ("Daniel","Cristian","Felipe",200,100,"Daniel")
+print("########## 05-Tuplas ##########")
+print (type(grupo1))
+
+#ACCEDIENDO AL PRIMER ELEMENTO DE LA TUPLA
+print(grupo1[0])
+
+#MUESTRA EL INDICE DEL PRIMER ELEMENTO BUSCADO
+print("Indice del elemento:",grupo1.index ("Daniel"))
+
+#REASIGNANDO EL VALOR
+grupo1[0] = "Constanza"
+print(grupo1)
+
+#SE PUEDEN SUMAR LAS TUPLAS?
+
+#OBTENER UN TROZO DE LA TUPLA
+
+grupo2 = ("Pedro",100,"Felipe","Diego",2020,"Alejandra")
+print("Trozo de la tupla",grupo2[0:3])
+
+#ENTONCES COMO NO PUEDO MODIFICAR UNA TUPLA, QUE PUEDO HACER?
+
+grupo1 =list(grupo1)
+print("La tupla ahora es de tipo:",type(grupo1,"\n"))
+
+# - SETS (CONJUNTOS) - ESTRUCTURA FIJA
+#FORMAS DE INICIALIZAR UN SET
+print("########## 06-Sets ##########")
+conjunto_vacio =set()
+conjunto_vacio1 = {} #¿DICCIONARIO O SET?
+print(type(conjunto_vacio1))
+conjunto_colores = set({"Azul","Rojo","Verde"}) #UTILIZANDO LA FUNCION SET
+conjunto_animales = {"Gato","Perro","Loro"} #UTILIZANDO LLAVES
+
+print(type(conjunto_colores)) #TIPO DE DATO SET
+print(type(conjunto_animales)) #TIPO DE DATO SET
+print("El primer set contiene los siguientes colores:",conjunto_colores)
+print("El segundo set contiene los siguientes animales:",conjunto_animales)
+
+print(conjunto_animales[0]) #ACCEDIENDO AL PRIMER ELEMENTO DEL SET
+conjunto_colores.add("Celeste")
+print(conjunto_colores)
