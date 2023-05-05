@@ -31,7 +31,7 @@ print("La asignatura de ",asignatura,"corresponde a la carrera de",carrera)
 print("La cantidad de caracteres de la palabra",asignatura,"es de:",len(asignatura))
 print("La cantidad de caracteres de la palabra",carrera,"es de:",len(carrera))
 
-#3. VALORES BOOLEANOS
+#3-VALORES BOOLEANOS
 
 ampolleta = False
 interruptor = True
@@ -94,10 +94,6 @@ print(grupo1[0])
 #MUESTRA EL INDICE DEL PRIMER ELEMENTO BUSCADO
 print("Indice del elemento:",grupo1.index ("Daniel"))
 
-#REASIGNANDO EL VALOR
-grupo1[0] = "Constanza"
-print(grupo1)
-
 #SE PUEDEN SUMAR LAS TUPLAS?
 
 #OBTENER UN TROZO DE LA TUPLA
@@ -106,9 +102,6 @@ grupo2 = ("Pedro",100,"Felipe","Diego",2020,"Alejandra")
 print("Trozo de la tupla",grupo2[0:3])
 
 #ENTONCES COMO NO PUEDO MODIFICAR UNA TUPLA, QUE PUEDO HACER?
-
-grupo1 =list(grupo1)
-print("La tupla ahora es de tipo:",type(grupo1,"\n"))
 
 # - SETS (CONJUNTOS) - ESTRUCTURA FIJA
 #FORMAS DE INICIALIZAR UN SET
@@ -124,9 +117,29 @@ print(type(conjunto_animales)) #TIPO DE DATO SET
 print("El primer set contiene los siguientes colores:",conjunto_colores)
 print("El segundo set contiene los siguientes animales:",conjunto_animales)
 
-print(conjunto_animales[0]) #ACCEDIENDO AL PRIMER ELEMENTO DEL SET
 conjunto_colores.add("Celeste")
 print(conjunto_colores)
+
+# - DICCIONARIOS
+
+print("########## 07-Diccionarios ##########")
+datos_personales = {
+    "Nombre":"Victor",
+    "Institucion":"Ulagos",
+    "Edad": 29
+}
+
+print("Diccionario inicial:",datos_personales)
+
+#CONSULTA LA CANTIDAD DE ELEMENTOS DEL DICCIONARIO
+print(len(datos_personales))
+
+#ES FACILMENTE ACCESIBLE A LOS ELEMENTOS DENTRO DE UN DICCIONARIO
+print(datos_personales["Institucion"])
+
+#¿COMO ACTUALIZAMOS EL VALOR DE UNA CLAVE DENTRO DE UN DICCIONARIO?
+datos_personales["Institucion"] = "USS"
+print("Diccionario actualizado:",datos_personales)
 
 datos_personales = {
     "Nombre":"Victor",
@@ -135,13 +148,11 @@ datos_personales = {
     "Asignaturas":{"Estructura de datos","Programacion"}
 }
 
-print("Diccionario inicial:",datos_personales)
-print(len(datos_personales))
-
-datos_personales["Institucion"] = "USS"
-print("Diccionario actualizado:",datos_personales)
-
 #AGREGANDO NUEVA CLAVE AL DICCIONARIO
 datos_personales["Ciudad"] = "Osorno"
 print(datos_personales)
-print("Diccionario con el nuevo campo")
+print("Diccionario con el nuevo campo",datos_personales)
+
+#ELIMINANDO UN CAMPO DEL DICCIONARIO
+del datos_personales["Ciudad"]
+print("Diccionario con el campo eliminado",datos_personales)
