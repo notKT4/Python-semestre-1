@@ -127,3 +127,21 @@ print("El segundo set contiene los siguientes animales:",conjunto_animales)
 print(conjunto_animales[0]) #ACCEDIENDO AL PRIMER ELEMENTO DEL SET
 conjunto_colores.add("Celeste")
 print(conjunto_colores)
+
+datos_personales = {
+    "Nombre":"Victor",
+    "Institucion":"Ulagos",
+    "Edad": 29,
+    "Asignaturas":{"Estructura de datos","Programacion"}
+}
+
+print("Diccionario inicial:",datos_personales)
+print(len(datos_personales))
+
+datos_personales["Institucion"] = "USS"
+print("Diccionario actualizado:",datos_personales)
+
+#AGREGANDO NUEVA CLAVE AL DICCIONARIO
+datos_personales["Ciudad"] = "Osorno"
+print(datos_personales)
+print("Diccionario con el nuevo campo")
