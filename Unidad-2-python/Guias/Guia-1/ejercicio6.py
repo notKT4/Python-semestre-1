@@ -16,3 +16,4 @@ Se necesita saber si en ambos grupos tienen algun estudiante en comun y, en caso
 de que asi sea, imprimir los nombres de esos estudiantes. Todo esto utilizando
 Sets.
 '''
+

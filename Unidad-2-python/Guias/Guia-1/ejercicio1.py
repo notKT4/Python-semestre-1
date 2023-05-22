@@ -13,8 +13,8 @@ n = n1,n2,n3
 
 if n != int:
     print("Un numero no es valido, ingrese solo numeros enteros")
-
-if n == int:
+else:
+    n == int
     if n1>n2>n3:
         print("a>b>c")
     if n1>n3>n2:
