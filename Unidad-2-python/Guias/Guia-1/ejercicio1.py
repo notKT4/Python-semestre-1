@@ -16,3 +16,21 @@ else:
     print (max(n1,n2,n3))
     print("El numero menor es: ")
     print(min(n1,n2,n3))
+n = n1,n2,n3
+
+if n != int:
+    print("Un numero no es valido, ingrese solo numeros enteros")
+else:
+    n == int
+    if n1>n2>n3:
+        print("a>b>c")
+    if n1>n3>n2:
+        print("a>c>b")
+    if n2>n3>n1:
+        print("b>c>a")
+    if n2>n1>n3:
+        print("b>a>c")
+    if n3>n2>n1:
+        print("c>b>a")
+    if n3>n1>n2:
+        print("c>a>b")

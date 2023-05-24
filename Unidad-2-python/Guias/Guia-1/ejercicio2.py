@@ -10,5 +10,7 @@ palabra1 =input("Ingrese una segunda palabra \n")
 
 if len(palabra) > len(palabra1):
     print(f"La palabra {palabra} tiene mas caracteres que la palabra {palabra1}")
-else: len(palabra) < len(palabra1)
-print(f"La palabra {palabra1} tiene mas caracteres que la palabra {palabra}")
+elif len(palabra) < len(palabra1):
+    print(f"La palabra {palabra1} tiene mas caracteres que la palabra {palabra}")
+else:
+    print(f"La palabra {palabra1} tiene la misma cantidad de caracteres que la palabra {palabra}")
