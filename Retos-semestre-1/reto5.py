@@ -7,9 +7,28 @@ utilizar condicionales y bucles.
 
 numero= int(input("Ingrese un numero \n"))
 
-if (numero/2):
-    print("el numero es par")
+if numero > 50:
+    print("El numero es mayor a 50")
+elif numero == 50:
+    print("El numero es 50")
 else:
-    print("el numero es impar")
+    print("El numero es menor a 50")
+
+def primo(numero):
+    if numero < 2:
+        return False
+    for i in range(2, int(numero**0.5) + 1):
+        if numero % i == 0:
+            return False
+    return True
+
+if primo:
+    print("El numero es primo")
+
+if numero % 2 ==0:
+    print("El numero es par")
+
+if numero % 2 !=0:
+    print("El numero es impar")
 
 
