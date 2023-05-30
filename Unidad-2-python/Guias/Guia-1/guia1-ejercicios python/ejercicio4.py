@@ -12,3 +12,18 @@ Ejemplo:
 Imprimir por pantalla, los primeros n cubos, considerando el valor de n obtenido desde
 teclado.
 '''
+
+n = int(input("Ingrese el valor que sera elevado al cubo: "))
+
+f = (n * (n - 1)) + 1
+
+if (n / 2) == float :
+    r = (n ** 2) + (n + 1)
+else :
+    r = (n ** 2) + n
+
+nicomaco = list(range(f, r, 2)) 
+
+cubo = sum(nicomaco)
+
+print("El resultado de elevar ", n,"al cubo es: ",cubo)
