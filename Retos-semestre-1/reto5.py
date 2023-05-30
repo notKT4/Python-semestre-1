@@ -6,13 +6,10 @@ utilizar condicionales y bucles.
 '''
 
 numero= int(input("Ingrese un numero \n"))
-numero_par= (numero/2 ==int)
-numero_impar=(numero/2 ==float)
 
-
-if numero_par:
+if (numero/2):
     print("el numero es par")
-elif numero_impar:
+else:
     print("el numero es impar")
 
 

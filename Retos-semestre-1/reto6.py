@@ -14,4 +14,4 @@ for i in range(10,31):
         print("30")
         print("Se detiene la ejecucion")
         break
-print(f"la suma es igual a: {suma}")
+print(f"la suma de todos los numeros es igual a: {suma}")
