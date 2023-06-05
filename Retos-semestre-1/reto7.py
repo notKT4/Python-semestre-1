@@ -4,6 +4,8 @@ devuelva un diccionario con las palabras que contiene
 y su longitud
 '''
 
+#CHATGPT:
+
 '''
 def obtener_longitud_palabras(frase):
     palabras = frase.split()
@@ -20,6 +22,7 @@ resultado = obtener_longitud_palabras(frase_usuario)
 print(resultado)
 
 '''
+#MANUAL
 
 def long(frase):
     palabras= frase.split()
