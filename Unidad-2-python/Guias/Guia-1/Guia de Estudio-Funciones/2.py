@@ -12,5 +12,3 @@ def ingresar():
 
 def contar():
     pass
-
-print(type(nombres))
