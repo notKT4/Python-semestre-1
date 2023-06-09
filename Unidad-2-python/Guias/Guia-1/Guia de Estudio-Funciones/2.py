@@ -6,9 +6,27 @@ cantidad total de letras de todos los nombres ingresados. Por ultimo, crear una 
 que imprima los resultados y muestre en pantalla los nombres ingresados y el total de
 letras contadas.
 '''
-def ingresar():
-    while input!= "exit":
-        print[input("Ingrese un numero: ")]
+             
+def ingreso():
+    nombres=[]
+    while True:
+        nombre=input("nombre>> ")
+        if nombre == "exit":
+            break
+        nombres.append(nombre)
+    return nombres
 
-def contar():
-    pass
+def letras(nombres):
+    total_letras=0
+    for nombre in nombres:
+        total_letras+= len(nombre)
+    return total_letras
+
+def resultado(nombres,letras ):
+    for nombre in nombres:
+        print(nombre)
+    print(letras)
+
+nombres = ingreso()
+total_letras = letras(nombres)
+resultado(nombres, total_letras)
