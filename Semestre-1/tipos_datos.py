@@ -6,6 +6,10 @@ estatura = 1.71 #real
 peso = 70.5
 complejo = 1 + 4j #complejo
 
+print("######## 01-DATOS NÚMERICOS ########");
+print(f"Mi estatura es de {estatura} y mi peso es de {peso}")
+print("Impresion de un número complejo:",complejo,"\n")
+
 #TRANSFORMANDO DE REAL A ENTERO
 print (peso)
 print ("Transformando un valor real a entero:",int(peso))
@@ -42,8 +46,14 @@ print(ampolleta,interruptor)
 #PODEMOS TRANSFORMAR CULAQUIER VALOR A UN BOOLEANO (al igual que un string, int, etc.)
 print(bool(0))
 print(bool(None))
+print(bool([]))
+print(bool(""))
 print(bool(True))
 print(bool(1))
+print("\n")
+
+#04-DATOS TIPO LIST (Objetos de Tipo Colección) - (Mutables)
+print("######## 04-LISTAS ########")
 
 #INICIALIZANDO LISTAS DE 2 MANERAS
 nueva_lista =list()
