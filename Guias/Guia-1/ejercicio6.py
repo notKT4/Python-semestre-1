@@ -17,3 +17,14 @@ de que asi sea, imprimir los nombres de esos estudiantes. Todo esto utilizando
 Sets.
 '''
 
+grupo1 = {"Marcos", "Gabriela", "Benjamin", "Matias"}
+grupo2 = {"Marcos", "Nicolas", "Diego", "Matias"}
+
+estudiantes_en_comun = grupo1.intersection(grupo2)
+
+if estudiantes_en_comun:
+    print("Los estudiantes en común son:")
+    for estudiante in estudiantes_en_comun:
+        print(estudiante)
+else:
+    print("No hay estudiantes en común entre los dos grupos.")

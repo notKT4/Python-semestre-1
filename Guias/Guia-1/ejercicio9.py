@@ -9,8 +9,15 @@ d) Obtener la media y la mediana de la lista
 
 '''
 
-numeros = [4,3,8,12,6,10,14,3,6]
+import statistics
 
-del(numeros[8])
-numeros.insert(0,2)
-print(numeros)
+numeros = [4, 3, 8, 12, 6, 10, 14, 3, 6]
+numeros.pop()
+numeros.insert(0, 2)
+numeros = list(set(numeros))
+media = statistics.mean(numeros)
+mediana = statistics.median(numeros)
+
+print("Lista actualizada:", numeros)
+print("Media:", media)
+print("Mediana:", mediana)

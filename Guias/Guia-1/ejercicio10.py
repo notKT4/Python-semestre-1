@@ -12,18 +12,17 @@ contacto y luego la agenda completa actualizada.
 
 '''
 
-agenda={
-    "nombre":"Jose",
-    "direccion":"Cesar Ercilla 895",
-    "ciudad":"Osorno",
-    "numero telefonico":"+56945766687"
+agenda = {
+    "Nombre": "Juan Perez",
+    "Direccion": "Calle Principal 123",
+    "Ciudad": "Ciudad Ejemplo",
+    "Numero telefonico": "1234567890"
 }
 
-agenda["redes sociales"]= {
-    "Facebook":"Jose Perez Cisterna",
-    "Instagram":"jose_44",
-    "Twitter":"joseperez_44"
-}
+agenda["Redes Sociales"] = ["Facebook: juanperez", "Instagram: juanperez_", "Twitter: @juanperez"]
 
-print (agenda["redes sociales"]["Facebook"])
-print (agenda)
+print("Perfil de Facebook del contacto:", agenda["Redes Sociales"][0].split(": ")[1])
+
+print("Agenda completa actualizada:")
+for clave, valor in agenda.items():
+    print(clave + ":", valor)
